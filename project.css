@@ -1,0 +1,393 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Arial, sans-serif;
+  background-attachment: fixed;
+}
+
+/* Navigation Styles */
+.nav_container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+header {
+  padding: 10px 0;
+  color: #fff;
+}
+
+header .nav_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #fbe4d8;
+}
+a:active {
+  color: red;}
+
+header .nav_container .nav_logo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav_logo img {
+  height: 84px;
+  margin-right: 20px;
+}
+
+.nav_logo h1 {
+  font-size: 1.5em;
+  margin-left: 40px;
+}
+
+/* Footer Styles */
+footer{
+color: #fbe4d8;
+text-align: center;
+padding: 20px 0;
+padding-left: 30px;
+padding-right: 80px;
+font-size: 1.1em;
+}
+
+/* login_page Styles */
+.login_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-cont,
+.signup-cont {
+  background-color: #fbe4d8;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5); /* Increased blur radius and darker shadow color */
+}
+
+h2 ,h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fbe4d8;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+button {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+@media (min-width: 768px) {
+  .login_container {
+    padding: 20px;
+  }
+  .login-cont,
+  .signup-cont {
+    width: 300px;
+    margin-right: 20px;
+  }
+}
+
+/* Footer_more Styles */
+div.footer_more_container, footer.copyright{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-section a {
+  color: #fbe4d8;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2px auto;
+}
+
+.footer-section a:active {
+  color: red; /* Change to desired color on click */
+}
+
+  /* About Us Section Styles */
+  .about-us {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #dfb6b2;
+  }
+
+  .about-us h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #190019;
+  }
+
+  .about-us p {
+    font-size: 1.1em;
+    line-height: 1.6;
+  }
+
+  /* About Us Founder Section Styles */
+.about-us-founder {
+padding: 50px 0;
+text-align: center;
+background-color: #fbe4d8;
+}
+
+.container_about-us-founder {
+max-width: 800px;
+margin: 0 auto;
+}
+
+.about-us-founder h2 {
+font-size: 2em;
+margin-bottom: 20px;
+color: #190019;
+}
+
+.founder-info {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.founder-info img {
+width: 200px; 
+border-radius: 50%; 
+margin-bottom: 20px;
+}
+
+.founder-details h3 {
+font-size: 1.5em;
+margin-bottom: 10px;
+}
+
+.founder-details p {
+font-size: 1.1em;
+line-height: 1.6;
+}
+
+
+/* Premium Styles */
+.container_premium {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #2b124c;
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5); /* Increased blur radius and darker shadow color */
+}
+
+
+h1, h2 {
+text-align: center;
+margin-bottom: 20px;
+}
+
+.plans {
+display: flex;
+justify-content: center;
+gap: 20px;
+margin-top: 20px;
+}
+
+.plan {
+flex: 1;
+padding: 20px;
+background-color: #fbe4d8;
+border-radius: 5px;
+text-align: center;
+box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.plan h3 {
+font-size: 1.5em;
+margin-bottom: 10px;
+}
+
+.plan p {
+font-size: 1.1em;
+margin-bottom: 10px;
+color: #190019;
+}
+
+.plan button {
+background-color: #e50914;
+color: #fff;
+border: none;
+padding: 10px 20px;
+font-size: 1.2em;
+cursor: pointer;
+border-radius: 5px;
+}
+
+.plan button:hover {
+background-color: #ff0e25;
+}
+
+/* Payment Styles */
+
+.container_payment {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fbe4d8;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  label {
+    margin-bottom: 10px;
+  }
+
+  input[type="text"],
+  input[type="number"],
+  input[type="submit"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  input[type="submit"] {
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #ff0e25;
+  }
+
+  /* Main Styles */
+
+  .main_section {
+    margin-bottom: 40px;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.main_section h2 {
+    margin-bottom: 20px;
+}
+
+.popular-shows, .avm, .fan_arts {
+    display: inline-block;
+    vertical-align: top;
+    white-space: nowrap;
+}
+
+.item {
+    width: 250px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    display: inline-block;
+}
+
+.item img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.item h3 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.watch-button {
+    display: block;
+    margin-top: 10px;
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.watch-button:hover {
+    background-color: #ff0000;
+}
+
+/*video play section Styles */
+
+.play-video-section {
+  flex: 0 0 60%;
+  position: relative;
+}
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.play-details-section {
+  flex: 0 0 40%;
+  padding: 20px;
+  overflow-y: auto;
+  width: 40%; 
+  background-color: #2b124c; 
+  border-left: 2px solid #ccc; 
+}
+.play-details-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.play-details-section p {
+  margin-bottom: 5px;
+}
+.play-details-section p:first-child {
+  margin-top: 0; 
+}
